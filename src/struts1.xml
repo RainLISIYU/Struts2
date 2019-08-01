@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	 <!--配置Struts2的常量 -->
+	<constant name="struts.action.extension" value="action"/>
+
+	<include file="com/liang/demo1/struts_demo1.xml"/>
+	<!--配置包-->
+	<!--<package name="test" namespace="/"  extends="struts-default">-->
+		<!--&lt;!&ndash;配置action&ndash;&gt;-->
+		<!--<action name="hello" class="com.liang.demo1.HelloAction">-->
+			<!--<result name="success">/jsp/success.jsp</result>-->
+		<!--</action>-->
+
+	<!--</package>-->
+
+</struts>
