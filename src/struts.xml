@@ -30,4 +30,6 @@
             <result name="success">/jsp/success.jsp</result>
         </action>
     </package>
+
+    <include file="com/liang/demo2/struts_demo2.xml"/>
 </struts>

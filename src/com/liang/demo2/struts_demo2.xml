@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="test1" namespace="/" extends="struts-default">
+        <action name="action1" class="com.liang.demo2.Action1">
+
+        </action>
+    </package>
+    <package name="test2" namespace="/" extends="struts-default">
+        <action name="action2" class="com.liang.demo2.Action2">
+
+        </action>
+    </package>
+    <package name="test3" namespace="/" extends="struts-default">
+        <action name="action3" class="com.liang.demo2.Action3">
+
+        </action>
+    </package>
+
+</struts>

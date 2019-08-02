@@ -1,7 +1,7 @@
 package com.liang.demo1;
 /**
  * Struts2的入门的Action类
- * @author jt
+ * @author 梁思禹
  */
 public class HelloAction {
 
