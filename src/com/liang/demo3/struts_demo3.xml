@@ -3,6 +3,7 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 
     <package name="demo3_test1" extends="struts-default" namespace="/">
         <action name="userFind" class="com.liang.demo3.ActionVisit" method="find">
@@ -15,6 +16,19 @@
 
         </action>
         <action name="userSave" class="com.liang.demo3.ActionVisit" method="save">
+
+        </action>
+
+        <!--
+            通配符配置
+            find()和update()一直报错。其他方法正常。未知错误
+        -->
+
+        <action name="user_*" class="com.liang.demo3.ActionVisit" method="{1}">
+
+        </action>
+        <!--动态方法访问-->
+        <action name="user" class="com.liang.demo3.ActionVisit">
 
         </action>
     </package>
