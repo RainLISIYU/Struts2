@@ -4,6 +4,9 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
     <package name="demo5test1" extends="struts-default" namespace="/">
+        <global-results>
+            <result name="input">/jsp/demo04.jsp</result>
+        </global-results>
         <action name="userAction1" class="com.liang.demo5.UserAction1">
 
         </action>
