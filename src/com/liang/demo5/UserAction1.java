@@ -3,7 +3,10 @@ package com.liang.demo5;
 import com.opensymphony.xwork2.ActionSupport;
 
 import java.util.Date;
-
+/**
+ * 数据封装方式一：提供set方法封装
+ * @author 梁思禹
+ */
 public class UserAction1 extends ActionSupport {
 
     private String name;
