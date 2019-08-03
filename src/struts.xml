@@ -33,4 +33,5 @@
 
     <include file="com/liang/demo2/struts_demo2.xml"/>
     <include file="com/liang/demo3/struts_demo3.xml"/>
+    <include file="com/liang/demo4/struts_demo4.xml"/>
 </struts>
