@@ -4,7 +4,31 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
     <package name="demo4test1" namespace="/" extends="struts-default">
-        <action name="request" class="com.liang.demo4.RequestDemo1">
+        <!--全局结果页面-->
+        <!--<global-results>-->
+            <!--<result name="success">/jsp/result03.jsp</result>-->
+        <!--</global-results>-->
+
+
+        <action name="request1" class="com.liang.demo4.RequestDemo1">
+            <!--
+                result标签中属性type
+                    dispatcher:默认值 请求转发（Action到JSP）
+                    redirect:重定向（Action到JSP）
+                    chain：转发（Action到Action）
+                    redirectAction：重定向（Action到Action）
+                    stream：文件下载
+            -->
+            <result name="success" type="dispatcher">
+                /jsp/result03.jsp
+            </result>
+        </action>
+        <action name="request2" class="com.liang.demo4.RequestDemo2">
+            <result name="success">
+                /jsp/result03.jsp
+            </result>
+        </action>
+        <action name="request3" class="com.liang.demo4.RequestDemo3">
             <result name="success">
                 /jsp/result03.jsp
             </result>

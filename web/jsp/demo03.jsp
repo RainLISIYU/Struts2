@@ -12,7 +12,19 @@
 </head>
 <body>
 <h2>方式一：完全解耦合的方式</h2><br/>
-<form action="/request.action" method="post">
+<form action="/request1.action" method="post">
+    姓名：<input type="text" name="name"/>
+    密码：<input type="password" name="password"/>
+    <input type="submit" value="登陆"/>
+</form>
+<h2>方式二：原生的方式</h2><br/>
+<form action="/request2.action" method="post">
+    姓名：<input type="text" name="name"/>
+    密码：<input type="password" name="password"/>
+    <input type="submit" value="登陆"/>
+</form>
+<h2>方式三：接口注入的方式</h2><br/>
+<form action="/request3.action" method="post">
     姓名：<input type="text" name="name"/>
     密码：<input type="password" name="password"/>
     <input type="submit" value="登陆"/>
