@@ -17,7 +17,7 @@
     s:form 不会产生中文乱码
     form   会产生中文乱码
 --%>
-<s:form action="/productAction1.action" methond="post">
+<s:form action="productAction1.action" namespace="/">
     名称：<input type="text" name="products[0].name"/><br/>
     价格：<input type="text" name="products[0].price"/><br/>
     名称：<input type="text" name="products[1].name"/><br/>
@@ -27,7 +27,7 @@
     <input type="submit" value="提交"/>
 </s:form>
 <h3>封装集合中</h3>
-<s:form action="/productAction2.action" methond="post">
+<s:form action="productAction2.action" namespace="/">
     名称：<input type="text" name="map['one'].name"/><br/>
     价格：<input type="text" name="map['one'].price"/><br/>
     名称：<input type="text" name="map['two'].name"/><br/>

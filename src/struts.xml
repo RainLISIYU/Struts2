@@ -25,6 +25,9 @@
 
 
 <struts>
+
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
+
     <package name="test" extends="struts-default" namespace="/">
         <action name="hello" class="com.liang.demo1.HelloAction">
             <result name="success">/jsp/success.jsp</result>

@@ -5,6 +5,7 @@
          version="3.1">
     
     <welcome-file-list>
+        <welcome-file>jsp/OGNLTest.jsp</welcome-file>
         <welcome-file>jsp/demo05.jsp</welcome-file>
         <welcome-file>jsp/demo04.jsp</welcome-file>
         <welcome-file>jsp/demo03.jsp</welcome-file>

@@ -3,6 +3,15 @@ package com.liang.po;
 import java.util.Date;
 
 public class User {
+
+    public User(){
+        super();
+    }
+
+    public User(String name) {
+        this.name = name;
+    }
+
     private String name;
     private String password;
     private Integer age;
