@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="demo7test1" namespace="/" extends="struts-default">
+        <action name="valueStack" class="com.liang.demo7.ValueStackTest1">
+            <result name="success">
+                /jsp/result04.jsp
+            </result>
+        </action>
+    </package>
+</struts>
