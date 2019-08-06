@@ -40,4 +40,5 @@
     <include file="com/liang/demo5/struts_demo5.xml"/>
     <include file="com/liang/demo6/struts_demo6.xml"/>
     <include file="com/liang/demo7/struts_demo7.xml"/>
+    <include file="com/liang/demo8/struts_demo8.xml"/>
 </struts>

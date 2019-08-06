@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="demo8test1" namespace="/" extends="struts-default">
+        <!--定义拦截器-->
+        <interceptors>
+            <interceptor name="interceptorDemo1" class="com.liang.demo8.InterceptorDemo1"/>
+            <interceptor name="interceptorDemo2" class="com.liang.demo8.InterceptorDemo2"/>
+            <!--创建拦截器栈-->
+            <interceptor-stack name="myStack">
+                <interceptor-ref name="interceptorDemo1"/>
+                <interceptor-ref name="interceptorDemo2"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <action name="demo8ActionDemo1" class="com.liang.demo8.ActionDemo1">
+            <result name="success">
+                /jsp/result05.jsp
+            </result>
+            <!--直接引入自定义的拦截器栈-->
+            <interceptor-ref name="myStack"/>
+            <!--引入拦截器，只要引入，默认的拦截器栈就不执行了-->
+            <!--<interceptor-ref name="defaultStack"/>-->
+            <!--<interceptor-ref name="interceptorDemo1"/>-->
+            <!--<interceptor-ref name="interceptorDemo2"/>-->
+        </action>
+    </package>
+</struts>
